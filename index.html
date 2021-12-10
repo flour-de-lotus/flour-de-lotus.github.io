@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko" prefix="og: http://ogp.me/ns#">
+  <head>	   
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	 
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">	
+	<meta name="description" content="URL 단축, 링크주소 줄이기, 짧은 링크, 통계, 개발 API, VOLA, Link Shotener, 보라, vo.la">
+	<meta property="og:url" content="https://vo.la/">		
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://vo.la/content/social_logo.png">
+	<meta property="og:title" content="단축URL, 링크관리 서비스 - 보라">
+	<meta property="og:description" content="URL 단축, 링크주소 줄이기, 짧은 링크, 통계, 개발 API, VOLA, Link Shotener, 보라, vo.la">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:url" content="https://vo.la/">
+	<meta name="twitter:image" content="https://vo.la/content/social_logo.png">
+	<meta name="twitter:description" content="URL 단축, 링크주소 줄이기, 짧은 링크, 통계, 개발 API, VOLA, Link Shotener, 보라, vo.la">
+	<link rel="shortcut icon" type="image/png" href="https://vo.la/themes/vola/img/favicon.png">
+	<link rel="canonical" href="https://vo.la">
+
+	<!-- Open Graph Tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://vo.la" />
+	<meta property="og:title" content="Multi link - 단축URL 서비스 - VOLA" />
+	<meta property="og:description" content="최고의 링크 관리 서비스를 제공합니다." />
+	<meta property="og:image" content="" />
+	<link rel="icon" type="image/x-icon" href="https://vo.la/content/favicon.ico" sizes="32x32" />	<title>Multi link - 단축URL 서비스 - VOLA</title>
+	<link href="//fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- BEGIN: VENDOR CSS-->	
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/vendors/vendors.min.css">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/vendors/animate-css/animate.css">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/vendors/chartist-js/chartist.min.css">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
+	<!-- END: VENDOR CSS-->
+	<!-- BEGIN: Page Level CSS-->
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/css/themes/vertical-modern-menu-template/materialize.css?ver=2.1">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/css/themes/vertical-modern-menu-template/style.css?ver=2.1">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/css/pages/dashboard-modern.css">
+	<!-- END: Page Level CSS-->
+	<!-- BEGIN: Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/assets/libs/@fortawesome/fontawesome-free/css/all.min.css">	
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/css/snackbar.min.css?ver=1.1">
+	<!-- 
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/style.css?ver=1.7">
+	 -->
+	
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/css/custom/custom.css?ver=2.1">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/css/custom/custom_ej.css?ver=2.1">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/css/pickr.min.css">
+	<link rel="stylesheet" type="text/css" href="https://vo.la/themes/vola/app-assets/css/animated.css">
+	<!-- END: Custom CSS-->
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+	
+	<script src="https://vo.la/themes/vola/app-assets/js/vendors.min.js" type="text/javascript"></script>
+	<script src="https://vo.la/themes/vola/app-assets/js/pickr.min.js" type="text/javascript"></script>
+	<!-- BEGIN PAGE VENDOR JS-->
+	<script src="https://vo.la/themes/vola/app-assets/vendors/chartjs/chart.min.js" type="text/javascript"></script>
+	<script src="https://vo.la/themes/vola/app-assets/vendors/chartist-js/chartist.min.js" type="text/javascript"></script>
+	<script src="https://vo.la/themes/vola/app-assets/vendors/chartist-js/chartist-plugin-tooltip.js" type="text/javascript"></script>
+	<script src="https://vo.la/themes/vola/app-assets/js/scripts/form-layouts.js" type="text/javascript"></script>
+	<!-- END PAGE VENDOR JS-->
+	<!-- BEGIN THEME	JS-->
+	<script src="https://vo.la/themes/vola/app-assets/js/plugins.js" type="text/javascript"></script>
+	<!-- END THEME	JS-->
+	<!-- BEGIN PAGE LEVEL JS
+	<script src="https://vo.la/themes/vola/app-assets/js/scripts/dashboard-modern.js" type="text/javascript"></script>
+	-->
+	
+	<script type="text/javascript" src="https://vo.la/themes/vola/assets/js/snackbar.min.js"></script>	
+	<script type="text/javascript" src="https://vo.la/themes/vola/assets/js/application.fn.js"></script>
+  	<script type="text/javascript" src="https://vo.la/themes/vola/assets/js/application.js"></script>
+	<script type="text/javascript" src="https://vo.la/themes/vola/assets/js/server.js"></script>
+  	<script type="text/javascript" src="https://vo.la/themes/vola/assets/js/serverManage.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  var appurl="https://vo.la";
+	  var token="50b5d02f3387030bf6063eca1380e719";
+	</script>  
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js?v=1.1.0"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js?v=1.0.1"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.15/clipboard.min.js?v=1.5.15"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js?v=3.0.3"></script>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css?v=3.0.3">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+	<style type='text/css'>body{font-family: 'Nanum Gothic' !important;}</style>
+	<script type='text/javascript'>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-120016384-2','auto');ga('send', 'pageview');</script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/0.4.17/pace.js?v=0.4.17"></script>
+		<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script>
+	window.GitpleConfig = {"appCode":"06dlgpicqkf9HqyZYxLZEDo3Xuouq2"};
+	!function(){function e(){function e(){var e=t.contentDocument,a=e.createElement("script");a.type="text/javascript",a.async=!0,a.src=window[n]&&window[n].url?window[n].url+"/inapp-web/gitple-loader.js":"https://app.gitple.io/inapp-web/gitple-loader.js",a.charset="UTF-8",e.head&&e.head.appendChild(a)}var t=document.getElementById(a);t||((t=document.createElement("iframe")).id=a,t.style.display="none",t.style.width="0",t.style.height="0",t.addEventListener?t.addEventListener("load",e,!1):t.attachEvent?t.attachEvent("onload",e):t.onload=e,document.body.appendChild(t))}var t=window,n="GitpleConfig",a="gitple-loader-frame";if(!window.Gitple){document;var i=function(){i.ex&&i.ex(arguments)};i.q=[],i.ex=function(e){i.processApi?i.processApi.apply(void 0,e):i.q&&i.q.push(e)},window.Gitple=i,t.attachEvent?t.attachEvent("onload",e):t.addEventListener("load",e,!1)}}();
+	Gitple('boot');
+   if (window.Gitple) {
+     window.Gitple('hide');
+   }
+	</script>
+
+	</head>
+	<div id="focus-overlay"></div>	
+	<a href="#body" id="back-to-top"><i class="zmdi zmdi-chevron-up"></i></a>
+				<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+ margin-left: 0px;
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ overflow-y: auto;
+
+ -ms-overflow-style: none;
+overflow-x: -moz-scrollbars-none;
+overflow-y: -moz-scrollbars-none;
+ overflow-x: hidden;
+
+}
+
+::-webkit-scrollbar {
+	display:none;
+} 
+
+
+#index-banner {
+  min-height: 100%;
+}
+.brand-name {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+    display: block;
+    line-height: 50px;
+}
+.link-btn{
+	position: relative;
+}
+body.insta-link{
+    background-attachment: fixed;
+    position: relative;
+}
+</style>
+
+<body class="insta-link link-body-background-one" style="">
+	<div class="section" id="index-banner">
+		<div class="container link-wapper row">
+			<div class="col s12 link-content"  style="float:none;margin: 0 auto;max-width:700px;">
+				<div class="center-align">
+					<img src='data:image/jpeg;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEVycm9yPjxDb2RlPkFjY2Vzc0RlbmllZDwvQ29kZT48TWVzc2FnZT5BY2Nlc3MgRGVuaWVkPC9NZXNzYWdlPjxSZXF1ZXN0SWQ+UTQyMFhOREdWNVk4QjRENzwvUmVxdWVzdElkPjxIb3N0SWQ+RExQb254MEtBZ082SHNFYjJGOTdYYzFQSUZZZGNNUmNBV0xVTERPMTFKYTBTZWtNVDhRYWxiMDlVVjh4Rmh4czVQd2R0V09lN1pNPTwvSG9zdElkPjwvRXJyb3I+' id="image" class="img-fluid link-image-preview" style="display:none" />
+				</div>
+				<header class="center-align" style="color: #ffffff !important;">
+					<div class="center-align">
+						<h1 id="title" style="color: #ffffff !important;">플라워 드 로터스 홈페이지</h1>
+					</div>
+					<p id="description">
+											</p>
+				</header>
+				<div id="links" class="row center-align">
+					<div class="col s12 m12 center">
+						
+																							<div class="col s12 link-btn sub-link-9113" data-link-id="9113">
+										<a href="" target="_blank" data-link-id="9113"  onclick='return false;'  data-location-org="" class="btn-large col s12 link-btn-rounded animated infinite - delay-2s" style="background: #ffffff;color: #636363">
+											<i class="material-icons menu-icon" style="vertical-align: top;margin-right: 5px;"></i>
+											<span>쇼핑몰 바로가기</span>
+											<i class="material-icons sub-button" style="vertical-align: top;position: absolute;right: 20px;display:none">play_arrow</i>
+										</a>
+									</div>
+																																<div class="col s12 link-btn sub-link-9114" data-link-id="9114">
+										<a href="" target="_blank" data-link-id="9114"  onclick='return false;'  data-location-org="" class="btn-large col s12 link-btn-rounded animated infinite - delay-2s" style="background: #ffffff;color: #636363">
+											<i class="material-icons menu-icon" style="vertical-align: top;margin-right: 5px;"></i>
+											<span>인스타그램 바로가기</span>
+											<i class="material-icons sub-button" style="vertical-align: top;position: absolute;right: 20px;display:none">play_arrow</i>
+										</a>
+									</div>
+																				</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="brand-name col s12 center" style="color: #ffffff !important;">
+		<a href='https://vo.la' id='home' style='color: #ffffff !important;'>by VO.LA</a>	</div>
+</body>
+
+<script>
+$(document).ready(function(){
+	
+	$(document).on('click', 'div[data-link-id] a', function(){
+		
+		let id = $(this).attr('data-link-id');
+		$.ajax({
+			url:'/multilink_clicks',
+			type: 'post',
+			data: {'request_type':'update_click', 'id':id},
+			success : function(data){
+				
+			}
+		});
+	});
+	
+	let banner_height = $("#index-banner").height();
+	let window_height = $(window).height()-100;
+	if(banner_height > window_height){
+		$(".brand-name").css("position", "relative");
+	}
+
+	$('.youtube-player').each(function(){
+		$src = $(this).attr('src');
+		if($src.split('?v=')[1] != undefined){
+			$src_org = $src.split('?v=')[1].split('&')[0];
+			$(this).attr('src', 'https://www.youtube.com/embed/'+$src_org);
+		}
+
+		if($src.split('.be/')[1] != undefined){
+			$(this).attr('src', 'https://www.youtube.com/embed/'+$src.split('.be/')[1]);
+		}
+	});
+});
+</script><div id="lang">
+
+</div>
+<script type="text/javascript">
+	$("#lang").data("Copied to clipboard.", "클립보드에 복사되었습니다.");
+</script>
+
+		
+<a class=" modal-trigger" id="modal_open"></a> <div id="modal-alert" class="modal modal-url"></div>
+	<div id="modal-popup" class="modal modal-popup"></div>
+	
+	<!-- END: Footer-->
+	<!-- BEGIN VENDOR JS-->		
+	<!-- END PAGE LEVEL JS-->
+
+<script type="text/javascript">
+		var lang = {"del":"\uc0ad\uc81c","url":"URL","count":"\uad6d\uac00","copied":"\ubcf5\uc0ac\uc644\ub8cc","geo":"\ub370\uc774\ud130 \uc218\uc9d1","error":"\uc720\ud6a8\ud55c URL\uc744 \uc785\ub825 \ud574\uc8fc\uc138\uc694.","success":"URL\uc774 \uc131\uacf5\uc801\uc73c\ub85c \ub2e8\ucd95\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \ubcf5\uc0ac\ub97c \ud074\ub9ad\ud558\uac70\ub098 CRTL + C\ub97c \ub20c\ub7ec \ub2e8\ucd95URL\uc744 \ubcf5\uc0ac\ud569\ub2c8\ub2e4.","stats":"\ud1b5\uacc4\ud398\uc774\uc9c0\ub294 \ub2e8\ucd95URL \ub4a4\uc5d0 '+'\ub97c \ucd94\uac00\ud558\uc5ec \ud655\uc778 \ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4 ","copy":"\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub418\uc5c8\uc2b5\ub2c8\ub2e4.","from":"\uc5d0\uc11c \ub9ac\ub514\ub809\uc158","to":"\ub9ac\ub514\ub809\uc158 \ub300\uc0c1","share":"SNS\uacf5\uc720 :","congrats":"URL\uc774 \uc131\uacf5\uc801\uc73c\ub85c \ub2e8\ucd95\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc544\ub798 \ub9c1\ud06c\ub97c \ud074\ub9ad\ud558\uc5ec Facebook \ub610\ub294 Twitter\uc5d0\uc11c \uacf5\uc720 \ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.","qr":"QR \ucf54\ub4dc \uc800\uc7a5","continue":"\uacc4\uc18d","notfree":"\uc774 \uae30\ub2a5\uc744 \uc0ac\uc6a9 \ud558\uc2dc\ub824\uba74 \ud68c\uc6d0\ub4f1\uae09 \uc5c5\uadf8\ub808\uc774\ub4dc\uac00 \ud544\uc694\ud569\ub2c8\ub2e4."};
+</script>
+		<script type="text/javascript" src="https://vo.la/themes/vola/assets/js/main.js"></script>
+	<script src="https://vo.la/themes/vola/app-assets/js/custom/custom-script.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	$(window).on("scroll", function() {
+		if($(window).scrollTop() > 50) {
+				$("header").addClass("activehead");
+		} else {
+				//remove the background property so it comes transparent again (defined in your css)
+			 $("header").removeClass("activehead");
+		}
+	});
+	
+	function In_headerFunction() {
+		var element = $("header");
+		element.toggleClass("activeheadmenu2");
+		window.isMenuOn = !window.isMenuOn;		
+	}
+	
+	function In_ShowPosInfo() {
+
+		$("#shortenurl").text($("#shortenurl").data("before")) ;
+		
+		$(".short-adv-sett").fadeIn(100);
+		$(".in-show").slideDown(100);
+
+		$(".end-show").css('display', '');
+		$(".main-index-top #main-form .main-options").slideDown(100);
+	}
+
+	function Out_ShowPosInfo() {
+		$('.short-adv-sett').prev().val('');
+		$(".short-adv-sett").fadeOut(100);
+		$("#shortenurl").text($("#shortenurl").data("before")) ;
+		$(".in-show").slideUp(100);
+	}
+	
+	//Custom Link Modal
+	var $modallink = $('.link-shared'),
+		$overlaylink = $('.overlaylink'),
+		$showModallink = $('.show-modal'),
+		$closelink = $('.closelink');
+		
+	function In_ShowLinkModal(){
+	e.preventDefault();
+	
+	var windowHeight = $(window).height(),
+			windowWidth = $(window).width(),
+			modalWidth = windowWidth/2; //50% of window
+	
+	$overlaylink.show();
+	$modallink.css({
+		'width' : modalWidth,
+		'margin-left' : -modalWidth/2
+	});
+	}
+
+	$closelink.on('click', function(){
+		$overlaylink.hide();
+	});
+	
+	//Sidebar Menu
+	$(document).on('click','.quicklinks-toggle__btn',function(){
+		$('body').addClass('menu_active');
+	});
+
+	$('#focus-overlay').on('click',function (){
+		$('body').removeClass('menu_active');
+	});
+	
+	$(document).ready(function(){
+		$("#widget_news h3").append(" <i class='zmdi zmdi-info' style='color: #00BCD4;'></i>");
+		$("#widget_activities h3").append(" <i class='zmdi zmdi-swap-vertical-circle' style='color: #ff9800;'></i>");
+		$("#widget_top_urls h3").append(" <i class='zmdi zmdi-trending-up' style='color: #4caf50;'></i>");
+		$("#splash h3, #splash_create h3").append(" <i class='zmdi zmdi-info' style='color: #673ab7;'></i>");
+		$("#overlay h3").append(" <i class='zmdi zmdi-info' style='color: #4CAF50;'></i>");
+		$("#widget_tools h3").append(" <i class='zmdi zmdi-wrench' style='color: #9c27b0;'></i>");
+		$("#widget_export h3").append(" <i class='zmdi zmdi-hourglass-alt' style='color: #4CAF50;'></i>");
+	});
+	
+	//Smooth Scroll
+	$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(t){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);(e=e.length?e:$("[name="+this.hash.slice(1)+"]")).length&&(t.preventDefault(),$("html, body").animate({scrollTop:e.offset().top},1e3,function(){var t=$(e);if(t.focus(),t.is(":focus"))return!1;t.attr("tabindex","-1"),t.focus()}))}})
+	</script>
+	<!-- Modal Css, Script-->
+	<style>
+		a{color:#000}.mask{width:100%;height:100%;position:fixed;left:0;top:0;z-index:10;background:#000;opacity:.5;filter:alpha(opacity=50)}#search_modal{display:none;position:relative;z-index:100;background:0 0}#search_modal .modal_content{width:80%;height:80%;padding:0;margin:0;position:fixed;left:10%;top:10%}#search_modal .modal_content .modal_close{		position: absolute;
+		right: 0px;
+		background: #fff;
+		font-size: 20px;
+		padding: 5px;
+		cursor:point;
+		top: 0;
+		opacity: 1;
+		cursor: pointer;
+		}
+		#search_modal .modal_content .modal_close.gitple-launcher-tooltip-close:after,#search_modal .modal_content .modal_close.gitple-launcher-tooltip-close:before{position:absolute;left:20px;content:" ";height:100%;width:2px;background-color:#fff}
+		@media (max-width: 768px){
+				.hero.is-medium .hero-body {
+						padding: 50px;
+				}
+				#search_modal .modal_content{width:90%;height:90%;padding:0;margin:0;position:fixed;left:5%;top:5%}
+				
+		}
+		#gitple-launcher {
+			z-index: 9999989;
+			display: block;
+			position: fixed;
+			bottom: 48px;
+			right:19px !important;
+			z-index:999999;
+		}
+		#gitple-launcher-icon {
+			cursor: pointer;
+			width: 60px;
+			bottom: 80px;
+			height: 60px;
+			border-radius: 30px;
+			-moz-box-shadow: 0px;
+			webkit-box-shadow: 0px;
+			/* box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1); */
+		}
+		</style>
+
+	</body>
+</html>
